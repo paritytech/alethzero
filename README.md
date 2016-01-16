@@ -4,37 +4,6 @@
 
 By Gav Wood et al*, 2013, 2014, 2015.
 
-          | Linux   | OSX | Windows
-----------|---------|-----|--------
-develop   | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=Linux%20C%2B%2B%20develop%20branch)](https://build.ethdev.com/builders/Linux%20C%2B%2B%20develop%20branch/builds/-1) | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=OSX%20C%2B%2B%20develop%20branch)](https://build.ethdev.com/builders/OSX%20C%2B%2B%20develop%20branch/builds/-1) | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=Windows%20C%2B%2B%20develop%20branch)](https://build.ethdev.com/builders/Windows%20C%2B%2B%20develop%20branch/builds/-1)
-master    | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=Linux%20C%2B%2B%20master%20branch)](https://build.ethdev.com/builders/Linux%20C%2B%2B%20master%20branch/builds/-1) | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=OSX%20C%2B%2B%20master%20branch)](https://build.ethdev.com/builders/OSX%20C%2B%2B%20master%20branch/builds/-1) | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=Windows%20C%2B%2B%20master%20branch)](https://build.ethdev.com/builders/Windows%20C%2B%2B%20master%20branch/builds/-1)
-evmjit    | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=Linux%20C%2B%2B%20develop%20evmjit)](https://build.ethdev.com/builders/Linux%20C%2B%2B%20develop%20evmjit/builds/-1) | [![Build+Status](https://build.ethdev.com/buildstatusimage?builder=OSX%20C%2B%2B%20develop%20evmjit)](https://build.ethdev.com/builders/OSX%20C%2B%2B%20develop%20evmjit/builds/-1) | N/A
-
-[![Stories in Ready](https://badge.waffle.io/ethereum/cpp-ethereum.png?label=ready&title=Ready)](http://waffle.io/ethereum/cpp-ethereum)
-
-AlethZero is the Hardcore Ethereum Client.
-
-Ethereum is based on a design in an original whitepaper by Vitalik Buterin. This implementation is based on the formal specification of a refinement of that idea detailed in the 'yellow paper' by Gavin Wood. Contributors, builders and testers include:
-
-- *arkpar* (**Arkadiy Paronyan**) Mix, PV61/BlockQueue
-- *debris* (**Marek Kotewicz**) JSONRPC, web3.js
-- *CJentzsch* (**Christoph Jentzsch**) tests, lots of tests
-- *LefterisJP* (**Lefteris Karapetsas**) Solidity, libethash
-- *chriseth* (**Christian Reitwiessner**) Solidity
-- *subtly* (**Alex Leverington**) libp2p, rlpx
-- *yann300* (**Yann Levreau**) Mix
-- *LianaHus* (**Liana Husikyan**) Solidity
-- *chfast* (**Paweł Bylica**) EVMJIT
-- *cubedro* (**Marian Oancea**) web3.js
-- *gluk256* (**Vlad Gluhovsky**) Whisper
-- *programmerTim* (**Tim Hughes**) libethash-cl
-
-And let's not forget: Caktux (neth, ongoing CI), Eric Lombrozo (original MinGW32 cross-compilation), Marko Simovic (original CI).
-
-### Building
-
-See the [Wiki](https://github.com/ethereum/webthree-umbrella/wiki) for build instructions, compatibility information and build tips. 
-
 ### License
 
 All new contributions are under the [MIT license](http://opensource.org/licenses/MIT).

@@ -98,12 +98,10 @@ private:
 	dev::u256 total() const;
 	dev::u256 value() const;
 	dev::u256 gasPrice() const;
-	dev::Address to() const;
 	void determineGasRequirements();
 
 	std::string natspecNotice(dev::Address _to, dev::bytes const& _data);
 	dev::Secret findSecret(dev::u256 _totalReq) const;
-
 
 	AlethFace* aleth() const { return m_aleth; }
 	dev::eth::Client* ethereum() const { return aleth()->ethereum(); }

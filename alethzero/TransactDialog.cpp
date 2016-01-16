@@ -121,6 +121,8 @@ u256 TransactDialog::value() const
 {
 	if (m_ui->valueUnits->currentIndex() == -1)
 		return 0;
+	if (m_ui->value->value() == -1)
+		return const_cast<TransactDialog*>(this)->aleth()->ethereum()->balanceAt(const_cast<TransactDialog*>(this)->fromAccount()) - fee();
 	return m_ui->value->value() * units()[units().size() - 1 - m_ui->valueUnits->currentIndex()].first;
 }
 
@@ -143,10 +145,9 @@ void TransactDialog::updateDestination()
 	m_ui->destination->addItem("(Create Contract)");
 	QMultiMap<QString, QString> in;
 	for (Address const& a: aleth()->allKnownAddresses())
-		in.insert(QString::fromStdString(aleth()->toReadable(a)), QString::fromStdString(a.hex()));
+		in.insert(QString::fromStdString(aleth()->toName(a)), QString::fromStdString(a.hex()));
 	for (auto i = in.begin(); i != in.end(); ++i)
 		m_ui->destination->addItem(i.key(), i.value());
-
 }
 
 void TransactDialog::updateFee()
